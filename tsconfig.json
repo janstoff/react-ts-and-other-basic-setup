@@ -4,11 +4,7 @@
     "noImplicitAny": false,
     "module": "commonjs",
     "target": "es5",
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
@@ -17,15 +13,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "downlevelIteration": true,
-    "paths": {
-      "components/*": [
-        "src/components/*"
-      ]
-    }
+    "downlevelIteration": true
   },
-  "include": [
-    "./src",
-    "./webpack.config.ts"
-  ]
+  "include": ["./src/**/*", "./webpack.config.ts"]
 }

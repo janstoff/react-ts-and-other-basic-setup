@@ -1,17 +1,29 @@
 {
-  "name": "react-typescript-starter",
-  "description": "Clean React 17 with TypeScript starter, without usage of create-react-app ⚛",
+  "name": "react-ts-and-other-basics",
   "version": "1.0.0",
-  "main": "src/index.tsx",
-  "repository": "https://github.com/GR34SE/react-typescript-starter.git",
+  "description": "React 17 with TypeScript starter heavily based on https://github.com/GR34SE/react-typescript-starter.git",
+  "repository": "https://github.com/janstoff/react-ts-and-other-basics.git",
   "license": "MIT",
+  "main": "src/index.tsx",
   "scripts": {
-    "develop": "webpack-cli serve --mode=development --env development --open --hot",
     "build": "webpack --mode=production --env production --progress",
+    "dev": "webpack-cli serve --mode=development --env development --open --hot",
+    "format": "prettier --write '**/*.{ts,tsx,md,json,js,jsx,css}'",
     "lint": "eslint './src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.16.0",
+    "@types/styled-components": "^5.1.16",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
     "@types/node": "16.11.11",
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11",
@@ -27,7 +39,9 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "fork-ts-checker-webpack-plugin": "6.5.0",
     "html-webpack-plugin": "5.5.0",
+    "jest": "^27.4.3",
     "prettier": "2.5.1",
+    "sort-package-json": "^1.53.1",
     "ts-loader": "9.2.6",
     "ts-node": "10.4.0",
     "tsconfig-paths-webpack-plugin": "3.5.2",
@@ -35,9 +49,5 @@
     "webpack": "5.64.4",
     "webpack-cli": "4.9.1",
     "webpack-dev-server": "4.6.0"
-  },
-  "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
   }
 }
